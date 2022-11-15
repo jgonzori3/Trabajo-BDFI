@@ -1,0 +1,8 @@
+user1@intancia-bdfi:~$ sudo systemctl stop mongod
+[sudo] password for user1: 
+user1@intancia-bdfi:~$ systemctl status mongod | grep Active
+     Active: inactive (dead) since Sun 2022-11-13 12:34:35 UTC; 2s ago
+     
+sudo docker system prune --force --volumes
+
+
