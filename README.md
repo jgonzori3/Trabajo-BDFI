@@ -114,5 +114,5 @@ Creamos un sistema predictivo completo en tiempo real con un front-end web para 
 
 
 ## Autores
-Alejandro Moreno 
-Jesús González
+- Alejandro Moreno 
+- Jesús González
