@@ -43,8 +43,11 @@ Se trabajará con las siguientes versiones de software:
 
 4. Se Utiliza PySpark con un algoritmo RandomForest para entrenar los modelos predictivos que se mencionaron anteriormente.
 
+5. Para realizar las prediciones en base a los datos entregados por el usuario a traves del interfaz web, se ejecuta el job de Spark.
 
+6. El job de Spark se ejecuta usando el spark-submit con el fichero .jar que haciendo uso de las clases de Scala podrá genrar un Stream al suscribirse al topic previamente creado con por kafka pudiendo así subscribirse y "consumir" los datos, y además se conectará a la base de datos de mongo para incluir las predicciones.
 
+7. Finalmente se podran mostrar las diferentes prediciones que se van generando gracias al Polling continuo que hace Flask a mongo utilizando el canal generado por kafka que se ha mencionado anteriormente. Será a traves de la interfaz web de Flask a traves de la cual se podran mandar los datos para hacer las predicciones y será por donde se podrán observar los resultados.
 
 
 #  La pirámide del valor de los datos
