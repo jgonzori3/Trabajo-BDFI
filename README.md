@@ -63,15 +63,15 @@ Se trabajará con las siguientes versiones de software:
 - Jesús González
 
 
-## Información Adicional Del Proyecto
+# Información Adicional Del Proyecto
 
 
-#  La pirámide del valor de los datos
+##  La pirámide del valor de los datos
 
 Originalmente por Pete Warden, la pirámide de valores de datos es cómo se organiza y estructura el libro. Lo subimos a medida que avanzamos cada capítulo.
 ![Data Value Pyramid](images/climbing_the_pyramid_chapter_intro.png)
 
-# Arquitectura del sistema
+## Arquitectura del sistema
 
 Los siguientes diagramas se extraen del libro y expresan los conceptos básicos de la arquitectura del sistema. Las arquitecturas de front-end y back-end funcionan juntas para crear un sistema predictivo completo.
 
