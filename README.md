@@ -58,7 +58,12 @@ Se trabajará con las siguientes versiones de software:
 5. Desplegar el escenario completo en Google Cloud (ya veremos). (500 puntos para griffindor)
 6. Entrenar el modelo con Apache Airflow (Griffidor hace el chanchullo y gana)
 
+## Autores
+- Alejandro Moreno 
+- Jesús González
 
+
+## Información Adicional Del Proyecto
 
 
 #  La pirámide del valor de los datos
@@ -113,6 +118,4 @@ Creamos un sistema predictivo completo en tiempo real con un front-end web para 
 
 
 
-## Autores
-- Alejandro Moreno 
-- Jesús González
+
