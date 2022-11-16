@@ -22,7 +22,7 @@ RUN	mkdir plugins
 
 RUN	pip install -r requirements.txt -c constraints.txt
 
-RUN	airflow initdb
+RUN	airflow initdb   ##esto lo he metido yo porque creo que hace falta
 
 RUN	airflow users create \   ##ESTO IGUAL HABRIA QUE PONERLO TODO SEGUIDO
     --username admin \

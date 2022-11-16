@@ -1,6 +1,5 @@
 #!/bin/bash
 
-systemctl start mongod
-  
-
-
+mongod &
+./resources/import_distances.sh &
+sleep infinity

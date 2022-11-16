@@ -25,12 +25,13 @@ services:
     network_mode: host
     depends_on:
      - kafka
-  # mongo:
-  #   container_name: mongo
-  #   build: mongo/.
-  #   ports:
-  #     - "27017:27017"
-  #   network_mode: host   
+  mongo:
+    container_name: mongo
+    image: gcr.io/imagenesdocker-368517/mongo
+    #build: mongo/.
+    ports:
+      - "27017:27017"
+    network_mode: host   
   spark:
     container_name: spark
     image: gcr.io/imagenesdocker-368517/spark
@@ -51,5 +52,5 @@ services:
       - PROJECT_HOME=/app/practica_big_data_2019
     depends_on:
       - spark
-    #  - mongo
+      - mongo
 
