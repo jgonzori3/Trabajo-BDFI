@@ -1,8 +1,50 @@
-# Trabajo-BDFI
+# Trabajo-BDFI  Predicciones de retrasos de vuelos
+Esta práctica que arranca del repositorio publicado https://github.com/ging/practica_big_data_2019 y este deriva de otro anterior https://github.com/rjurney/Agile_Data_Code_2 . 
+En esta practica se resuelve el problema de desplegar el escenario con Docker Compose utilizando imagenes publicadas en Google Cloud.
 
 ##  Curso de análisis predictivo en tiempo real
 
 [ <img src="images/video_course_cover.png"> ](http://datasyndrome.com/video)
+
+## Descargar el proyecto principal 
+Para poder arrancar con el despliegue de los componentes se ha estructurado un proyecto en un repositorio de github para poderse descargar en local.
+para ello primero se crea un directorio en el escritorio al que llamaremos PruebasDocker ------
+
+```
+mkdir PruebasDocker
+cd PruebasDocker
+```
+Una vez dentro de este directrio importaremos el proyecto desde el repositorio.
+```
+git clone https://github.com/jgonzori3/Trabajo-BDFI.git
+```
+
+Debemos tener en cuenta que para este proyecto se necesita al menos trabajar en una maquina que tenga ubuntu 20 por temas de compatibilidad entre versiones.
+Se trabajará con las siguientes versiones de software: 
+
+ - [Intellij](https://www.jetbrains.com/help/idea/installation-guide.html) (jdk_1.8)
+ - [Pyhton3](https://realpython.com/installing-python/) (Suggested version 3.8) 
+ - [PIP](https://pip.pypa.io/en/stable/installing/)
+ - [SBT](https://www.scala-sbt.org/release/docs/Setup.html) 
+ - [MongoDB](https://docs.mongodb.com/manual/installation/)
+ - [Spark](https://spark.apache.org/docs/latest/) (Mandatory version 3.1.2)
+ - [Scala](https://www.scala-lang.org)(Suggested version 2.12)
+ - [Zookeeper](https://zookeeper.apache.org/releases.html)
+ - [Kafka](https://kafka.apache.org/quickstart) (Mandatory version kafka_2.12-3.0.0)
+
+
+# Procesos que se realizan
+
+1. Inicialmente se parte de un dataset que recoje infomacion sobre vuelos y retrasos de los mismos. 
+
+2. Seguidamente estos datos serviran para entrenar un Modelo de Machine Learning. estos pasos se han realizado previo a publicacion de este repositorio y se presentan los resultados almacenados dentro de la carpeta **data** dentro del proyectos, que ademas ya son almacenados en la base de datos de mongo.
+
+3. para el correcto funcionamiento del conjunto de servicios se establecen los flujos de comunicacion entre el Job de Spark y el propio servido WebFlask. esta comunicacion se ha implementado con Zookeeper y kafka y see crea un topica al que el job de Spark se encuentra suscrito.
+
+4. Se Utiliza PySpark con un algoritmo RandomForest para entrenar los modelos predictivos que se mencionaron anteriormente.
+
+
+
 
 
 #  La pirámide del valor de los datos
