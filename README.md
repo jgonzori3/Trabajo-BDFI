@@ -49,10 +49,22 @@ Se trabajará con las siguientes versiones de software:
 
 7. Finalmente se podran mostrar las diferentes prediciones que se van generando gracias al Polling continuo que hace Flask a mongo utilizando el canal generado por kafka que se ha mencionado anteriormente. Será a traves de la interfaz web de Flask a traves de la cual se podran mandar los datos para hacer las predicciones y será por donde se podrán observar los resultados.
 
+# Hitos alcanzados
+
+1. Lograr el funcionamiento de la práctica sin realizar modificaciones (4 puntos).
+2. Ejecución del job de predicción con Spark Submit en vez de IntelliJ (1 punto).
+3. Dockerizar cada uno de los servicios que componen la arquitectura completa. (1 punto)
+4. Desplegar el escenario completo usando docker-compose. (1 punto)
+5. Desplegar el escenario completo en Google Cloud (ya veremos). (500 puntos para griffindor)
+6. Entrenar el modelo con Apache Airflow (Griffidor hace el chanchullo y gana)
+
+
+
 
 #  La pirámide del valor de los datos
 
-
+Originalmente por Pete Warden, la pirámide de valores de datos es cómo se organiza y estructura el libro. Lo subimos a medida que avanzamos cada capítulo.
+![Data Value Pyramid](images/climbing_the_pyramid_chapter_intro.png)
 
 # Arquitectura del sistema
 
