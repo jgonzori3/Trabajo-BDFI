@@ -107,3 +107,12 @@ Demostramos resumir una entidad con una página de flota de aviones que describe
 Creamos un sistema predictivo completo en tiempo real con un front-end web para enviar solicitudes de predicción.
 
 ![Predicting Flight Delays UI](images/predicting_flight_kafka_waiting.png)
+
+
+
+
+
+
+## Autores
+Alejandro Moreno 
+Jesús González
